@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-serif: var(--font-serif), serif;
+  --font-sans: var(--font-sans), sans-serif;
+}
+
+:root {
+  --bg-surface: #FAFAF8;
+  --text-main: #1A1C1B;
+  --text-muted: #6B6864;
+  --accent-primary: #894D1C;
+  --border-subtle: #E8E8E6;
+}
+
+body {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  overscroll-behavior-y: none;
+}
+
+/* Custom scrollbar hide for ultra minimal look */
+::-webkit-scrollbar {
+  display: none;
+}
